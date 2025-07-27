@@ -1,7 +1,7 @@
 /**
  * Main entry point: Fetches Linnworks purchase orders and inserts new ones into MS SQL.
  */
-function main() {
+function main_stocklevel() {
   const allData = getLinnworksPurchaseOrdersData();
   if (allData.length === 0) {
     Logger.log('No Linnworks data found to insert.');
